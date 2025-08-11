@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 03</title>
+</head>
+<body>
+    <header>
+        <h1>Exercício Prático</h1>
+        <p>Conteudo:
+            <ul>
+                <li>Tags semânticas</li>
+                <li>Agrupamento</li>
+                <li>Multimídia</li>
+                <li>Listas</li>
+                <li>Formulário</li>
+                <li>Botões</li>
+                <li>Menus</li>
+            </ul>
+        </p>
+
+        <nav>
+        <ul>
+            <li><a href="#semantica">Semântica</a></li>
+            <li><a href="#multimídia">Multimídia</a></li>
+            <li><a href="#listas">Listas</a></li>
+            <li><a href="#formulario">Formulário</a></li>
+            <li><a href="#tabela">Tabela</a></li>
+            <li><a href="#agrupamento">Agrupamento</a></li>
+        </ul>
+    </nav>
+
+    </header>
+    
+    <main>
+        <section id="semantica">
+            <h2>Layout semântico e agrupamento</h2>
+            <p>As tags semânticas ajudam a organizar e descrever o conteúdo da página.</p>
+            <section>
+                <h4>Exemplo de agrupamento</h4>
+                <p>Um <code>fieldset</code> é útil para agrupar controles dentro de um formulário.</p>
+                <fieldset>
+                    <legend>Dados de exemplo</legend>
+                    <p>Nome: <strong>João</strong></p>
+                    <p>E-mail: <strong>joão@example.com</strong></p>
+                </fieldset>
+            </section>
+        </section>
+
+        <article>
+            <h2>Multimídia</h2>
+            <audio controls>
+                <source src="Luiz-gonzaga.mp3" type="audio/mp3">
+                Seu navegador não suporta o elemento de áudio.
+            </audio>
+        </article>
+
+        <form action="#" method="post" id="formulario">
+           <fieldset>
+             <legend>Formulário de cadastro</legend>
+                <label for="nome"> Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Nome completo" required>
+                <br>
+
+                <label for="password"> Senha:</label>
+                <input type="password" id="password" name="password" placeholder="Informe a senha" required>
+            
+                <label for="data_nascimento">Data de nascimento:</label>
+                <input type="date" id="data_nascimento" name="data_nascimento">
+                <br>
+
+                <label for="curso">Curso:</label>
+                <select name="curso" id="curso">
+                    <option value="">--selecione--</option>
+                    <option value="">Desevolvimento Web</option>
+                    <option value="">Quality Assurance</option>
+                    <option value="">Desevolvimento Back-end</option>
+                    <option value="">Gestão de Projetos</option>
+                </select>
+           </fieldset>
+        </form>
+
+        <section>
+            <table border="1" id="tabela">
+                <caption>Lista de Alunos</caption>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Idade</th>
+                        <th>Nota</th>
+                        <th>Classificação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ana</td>
+                        <td>19</td>
+                        <td>8.5</td>
+                        <td>Aprovado</td>
+                    </tr>
+                    <tr>
+                        <td>Bruno</td>
+                        <td>20</td>
+                        <td>7.0</td>
+                        <td>Aprovado</td>
+                    </tr>
+                    <tr>
+                        <td>Carlos</td>
+                        <td>22</td>
+                        <td>5.0</td>
+                        <td>Reprovado</td>
+                </tbody> 
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Total de Alunos</td>
+                        <td>3</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+ </main>
+</body>
+</html>
