@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário de Cadastro</title>
+  </head>
+  <body>
+    <div>
+      <h1>Formulário de Cadastro</h1>
+    </div>
+    <div>
+      <form>
+        <div class="form">
+          <label>Nome completo:</label>
+          <input type="text" name="nome" required />
+        </div>
+
+        <div class="form">
+          <label>E-mail:</label>
+          <input type="email" name="email" required />
+        </div>
+
+        <div class="form">
+          <label>Senha:</label>
+          <input type="password" name="senha" required />
+        </div>
+
+        <div class="form">
+          <label>Escolha um curso:</label>
+          <select name="curso">
+            <option value="engenharia">Engenharia</option>
+            <option value="medicina">Medicina</option>
+            <option value="direito">Direito</option>
+            <option value="arquitetura">Arquitetura</option>
+          </select>
+        </div>
+
+        <div class="form">
+          <label>Descrição:</label>
+          <textarea name="descricao" rows="4" cols="50" required></textarea>
+        </div>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </body>
+  <style>
+    .form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+  </style>
+</html>
