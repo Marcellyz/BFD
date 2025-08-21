@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lan House</title>
+</head>
+<body>
+    <h1>
+        Consulta de preço Lan House
+    </h1>
+
+    <p>Insira os dados do serviço para calcular o preço:</p>
+    
+    <label>Quantidade em minutos:</label>
+    <input type="text" id="tempoMinutos" placeholder="HH:MM" /><br />
+
+    <label>Preço por 15 minutos: </label>
+    <input type="number" id="precoPor15Min" step="0.01" /><br />
+    <button onclick="calcularPreco()">Calcular Preço</button>
+    <p id="resultado"></p>
+
+    <script src="exercicio-lan-house.js"></script>
+</body>
+</html>

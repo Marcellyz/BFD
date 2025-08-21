@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supermercado em Promoção</title>
+</head>
+<body>
+    
+    <h1>
+        Supermercado em Promoção
+    </h1>
+
+    <label>Digite a descrição do produto:</label>
+    <input type="text" id="descricaoProduto" placeholder="Descrição do produto">
+    <br><br>
+
+    <label>Digite o preço do produto:</label>
+    <input type="number" id="precoProduto" placeholder="Preço do produto">
+
+    <label>Digite a Quantidade:</label>
+    <input type="number" id="quantidadeProduto" placeholder="Quantidade do produto">
+
+    <br><br>
+    <button onclick="calcularPreco()">Calcular Produto</button>
+
+    <p id="resultado"></p>
+    <p id="desconto"></p>
+
+    <script src="supermercado.js"></script>
+</body>
+</html>
