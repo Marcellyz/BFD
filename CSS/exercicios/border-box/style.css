@@ -1,0 +1,68 @@
+/* Reset básico */
+* {
+  box-sizing: content-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilização geral */
+body {
+  font-family: Arial, sans-serif;
+  padding: 40px;
+  background-color: #f9f9f9;
+}
+
+/* Título */
+h1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Estilo base das caixas */
+.caixa {
+  width: 300px;
+  height: 100px;
+  padding: 20px;
+  margin-bottom: 30px;
+  border: 5px solid black;
+  color: white;
+  font-size: 20px;
+  position: relative;
+}
+
+/* Caixa 1: azul */
+.caixa1 {
+  background-color: #3498db;
+  padding: 50px;
+}
+
+/* Caixa 2: verde, deslocada */
+.caixa2 {
+  background-color: #2ecc71;
+  left: 50px;
+  width: 100%;
+}
+
+/* Caixa 3: vermelha, absoluta */
+.caixa3 {
+  background-color: #e74c3c;
+  position: absolute;
+  top: 200px;
+  left: 100px;
+  width: 250px;
+  height: 80px;
+  padding: 10px;
+  border: 3px dashed #fff;
+}
+
+/* Caixa 4: amarela, fixed */
+.caixa4 {
+  background-color: #e7b13c;
+  position: fixed;
+  top: 200px;
+  left: 100px;
+  width: 250px;
+  height: 80px;
+  padding: 10px;
+  border: 3px dashed #fff;
+}
