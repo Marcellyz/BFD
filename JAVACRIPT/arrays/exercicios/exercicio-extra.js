@@ -1,8 +1,6 @@
 let fila = ["João","Maria","Carlos","Ana"];
-let i = 0;
 
-while (i <= fila.length) {
+while (fila.length > 0) {
    let removido = fila.shift();
-   console.log(`${removido} saiu da fila!`);
-    i++;
+   console.log( removido + " saiu da fila!");
 }
